@@ -1,0 +1,15 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\hw_i2c.o"
+".\objects\hw_ssd1306.o"
+".\objects\hw_mcu.o"
+".\objects\sys_time.o"
+".\objects\fontarial16.o"
+".\objects\gontarial24.o"
+".\objects\hw_dma.o"
+".\objects\ws2812.o"
+".\objects\startup_stm32f401xc.o"
+".\objects\system_stm32f4xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\hello.map" -o .\Objects\hello.axf
